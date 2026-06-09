@@ -373,6 +373,7 @@ width:100%;
 <div class="card" onclick="openAirline('Ryanair')"><span>Ryanair</span></div>
 <div class="card" onclick="openAirline('Lauda')"><span>Lauda</span></div>
 <div class="card" onclick="openAirline('Eurowings')"><span>Eurowings</span></div>
+<div class="card" onclick="openAirline('KLM Royal Dutch Airlines')"><span>Eurowings</span></div>
 <div class="card" onclick="openAirline('Wizz Air')"><span>Wizz Air</span></div>
 <div class="card" onclick="openAirline('Tui Fly')"><span>Tui Fly</span></div>
 <div class="card" onclick="openAirline('Air France')"><span>Air France</span></div>
@@ -468,18 +469,23 @@ const airlines = {
 {immat:"F-GZHC",type:"737-800",photo:"F-GZHC.JPG"},
 {immat:"F-GZHE",type:"737-800",photo:"F-GZHE.JPG"},
 {immat:"F-GZHL",type:"737-800",photo:"F-GZHL.JPG"},
+{immat:"F-GZHM",type:"737-800",photo:"F-GZHM.JPG"},
 {immat:"F-GZHO",type:"737-800",photo:"F-GZHO.JPG"},
 {immat:"F-GZHT",type:"737-800",photo:"F-GZHT.JPG"},
+{immat:"F-GZHX",type:"737-800",photo:"F-GZHX.JPG"},
+{immat:"F-HUYA",type:"737-800",photo:"F-HUYA.JPG"},
 {immat:"F-HUYL",type:"737-800",photo:"F-HUYL.jpeg"},
+{immat:"F-HUYQ",type:"737-800",photo:"F-HUYQ.JPG"},
 {immat:"F-HUYT",type:"737-800SS",photo:"F-HUYT.JPG"},
 {immat:"F-HTVB",type:"737-800",photo:"F-GZHR.JPG"},
 {immat:"F-HTVC",type:"737-800",photo:"F-HTVC.JPG"},
 {immat:"F-HTVG",type:"737-800",photo:"F-HTVG.JPG"},
+{immat:"F-HTVL",type:"737-800",photo:"F-HTVL.JPG"},
 {immat:"F-HTVS",type:"737-800",photo:"F-HTVS.JPG"},
 {immat:"F-HTVT",type:"737-800",photo:"F-HTVT.JPG"},
 {immat:"F-HTVN",type:"737-800",photo:"F-HTVN.JPG"},
 {immat:"F-HTVM",type:"737-800",photo:"F-HTVM.JPG"},
-{immat:"F-HUYQ",type:"737-800",photo:"F-HUYQ.JPG"}
+{immat:"F-HTVS",type:"737-800",photo:"F-HTVS.JPG"}
 
 ],
 
@@ -499,7 +505,8 @@ const airlines = {
 ],
     
 "ITA Airways":[
-{immat:"EI-HJD",type:"A320neo",photo:"EI-HJD.JPG"}
+{immat:"EI-HJD",type:"A320neo",photo:"EI-HJD.JPG"},
+{immat:"EI-TEA",type:"A220-300",photo:"EI-TEA.JPG"}
 ],
 
 "ASL Airlines":[
@@ -508,11 +515,12 @@ const airlines = {
 ],
   
 "Air Caraïbes":[
-{immat:"F-OFDF",type:"A330-200",photo:"F-OFDF.JPG"}
+{immat:"F-OFDF",type:"A330-200",photo:"F-OFDF.JPG"},
+{immat:"F-HNET",type:"A350-900",photo:"F-HNET.JPG"}
 ],
   
 "French Bee":[
-{immat:"F----",type:"----",photo:"F----.JPG"}
+{immat:"F-HREV",type:"A350-900",photo:"F-HREV.JPG"}
 ],
   
 "Condor":[
@@ -537,14 +545,37 @@ const airlines = {
 {immat:"D-AEEB",type:"A321neo",photo:"D-AEEB.JPG"},
 {immat:"D-AEWM",type:"A320-200S",photo:"D-AEWM.JPG"}
 ],
-      
+         
+"KLM Royal Dutch Airlines":[
+{immat:"PH-AXA",type:"A321neo",photo:"PH-AXA.JPG"},
+{immat:"PH-AXB",type:"A321neo",photo:"PH-AXB.JPG"},
+{immat:"PH-AXC",type:"A321neo",photo:"PH-AXC.JPG"},
+{immat:"PH-AXD",type:"A321neo",photo:"PH-AXD.JPG"},
+{immat:"PH-AXE",type:"A321neo",photo:"PH-AXE.JPG"},
+{immat:"PH-AXF",type:"A321neo",photo:"PH-AXF.JPG"},
+{immat:"PH-AXG",type:"A321neo",photo:"PH-AXG.JPG"},
+{immat:"PH-AXH",type:"A321neo",photo:"PH-AXH.JPG"},
+{immat:"PH-AXI",type:"A321neo",photo:"PH-AXI.JPG"},
+{immat:"PH-AXK",type:"A321neo",photo:"PH-AXK.JPG"},
+{immat:"PH-AXL",type:"A321neo",photo:"PH-AXL.JPG"},
+{immat:"PH-AXM",type:"A321neo",photo:"PH-AXM.JPG"},
+{immat:"PH-AXN",type:"A321neo",photo:"PH-AXN.JPG"},
+{immat:"PH-AXP",type:"A321neo",photo:"PH-AXP.JPG"},
+{immat:"PH-AXR",type:"A321neo",photo:"PH-AXR.JPG"},
+{immat:"PH-AXT",type:"A321neo",photo:"PH-AXT.JPG"}
+
+],
+   
 "LOT Polish Airlines":[
 {immat:"SP-LVF",type:"737-MAX-8",photo:"SP-LVF.JPG"},
-{immat:"SP-",type:"737-MAX-8",photo:"SP-.JPG"}
+{immat:"SP-LVD",type:"737-MAX-8",photo:"SP-LVD.JPG"}
 ],
  
 "Wizz Air":[
-{immat:"HA-LGZ",type:"A321neo",photo:"HA-LGZ.JPG"}
+{immat:"HA-LGZ",type:"A321neo",photo:"HA-LGZ.JPG"},
+{immat:"9H-WAD",type:"A321neo",photo:"9H-WAD.JPG"},
+{immat:"9H-WMD",type:"A321neo",photo:"9H-WMD.JPG"}
+
 ],
 
 "Tui Fly":[
@@ -556,6 +587,7 @@ const airlines = {
 {immat:"F-GKXG",type:"A320-200",photo:"F-GKXG.JPG"},
 {immat:"F-GKXN",type:"A320-200",photo:"F-GKXN.jpeg"},
 {immat:"F-GKXR",type:"A320-200",photo:"F-GKXR.JPG"},
+{immat:"F-GZCB",type:"A330-200",photo:"F-GZCB.JPG"},
 {immat:"F-HEPF",type:"A320-200",photo:"F-HEPF.jpeg"},
 {immat:"F-HEPH",type:"A320-200",photo:"F-HEPH.jpeg"},
 {immat:"F-HEPJ",type:"A320-200",photo:"F-HEPJ.jpeg"},
@@ -566,6 +598,8 @@ const airlines = {
 {immat:"F-HBNJ",type:"A320-200",photo:"F-HBNJ.JPG"},
 {immat:"F-GUGP",type:"A318-100",photo:"F-GUGP.JPG"},
 {immat:"F-GSQO",type:"777-300",photo:"F-GSQO.JPG"},
+{immat:"F-GSQA",type:"777-300",photo:"F-GSQA.JPG"},
+{immat:"F-HUVP",type:"A350-900",photo:"F-HUVP.JPG"},
 {immat:"F-GSQT",type:"777-300",photo:"F-GSQT.jpeg"},
 {immat:"F-GZNN",type:"777-300",photo:"F-GZNN.jpeg"},
 {immat:"F-HBXG",type:"E170",photo:"F-HBXG.png"}
@@ -574,6 +608,7 @@ const airlines = {
 "Vueling Airlines":[
 {immat:"EC-MVO",type:"A320-200",photo:"EC-MVO.JPG"},
 {immat:"EC-KLB",type:"A320-200",photo:"EC-KLB.JPG"},
+{immat:"EC-NBA",type:"A320neo",photo:"EC-NBA.JPG"},
 {immat:"EC-NDB",type:"A320neo",photo:"EC-NDB.JPG"},
 {immat:"EC-KCU",type:"A320-200",photo:"EC-KCU.JPG"},
 {immat:"EC-MLE",type:"A320-200S",photo:"EC-MLE.JPG"},
@@ -581,6 +616,7 @@ const airlines = {
 {immat:"EC-NUO",type:"A320-200",photo:"EC-NUO.JPG"},
 {immat:"EC-OKH",type:"A320-200S",photo:"EC-OKH.JPG"},
 {immat:"EC-LVV",type:"A320-200S",photo:"EC-LVV.JPG"},
+{immat:"EC-LVP",type:"A320-200S",photo:"EC-LVP.JPG"},
 {immat:"EC-MOO",type:"A321-200S",photo:"EC-MOO.JPG"},
 {immat:"EC-MXG",type:"A320-200S",photo:"EC-MXG.JPG"},
 {immat:"EC-NLX",type:"A321-200S",photo:"EC-NLX.JPG"}
@@ -635,6 +671,8 @@ const airlines = {
     
 "avions speciaux":[
 {immat:"F-BVFF",type:"Concorde 101",photo:"F-BVFF.jpeg"},
+{immat:"01-0193",type:"Boeing C-17A Globemaster III",photo:"01-0193.JPG"},
+{immat:"03-3124",type:"Boeing C-17A Globemaster III",photo:"03-3124.JPG"},
 {immat:"701",type:"A319-132ACJ",photo:"701.jpeg"}
 ],
 
