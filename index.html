@@ -374,6 +374,7 @@ width:100%;
 <div class="card" onclick="openAirline('ASL Airlines')"><span>ASL Airlines</span></div>
 <div class="card" onclick="openAirline('Chalair Aviation')"><span>Chalair Aviation</span></div>
 <div class="card" onclick="openAirline('Condor')"><span>Condor</span></div>
+<div class="card" onclick="openAirline('Croatia Airlines')"><span>Croatia Airlines</span></div>
 <div class="card" onclick="openAirline('Eurowings')"><span>Eurowings</span></div>
 <div class="card" onclick="openAirline('French Bee')"><span>French Bee</span></div>
 <div class="card" onclick="openAirline('ITA Airways')"><span>ITA Airways</span></div>
@@ -469,20 +470,24 @@ const airlines = {
 {immat:"F-GZHB",type:"737-800",photo:"F-GZHB.JPG"},
 {immat:"F-GZHC",type:"737-800",photo:"F-GZHC.JPG"},
 {immat:"F-GZHE",type:"737-800",photo:"F-GZHE.JPG"},
+{immat:"F-GZHK",type:"737-800",photo:"F-GZHK.JPG"},
 {immat:"F-GZHL",type:"737-800",photo:"F-GZHL.JPG"},
 {immat:"F-GZHM",type:"737-800",photo:"F-GZHM.JPG"},
 {immat:"F-GZHO",type:"737-800",photo:"F-GZHO.JPG"},
 {immat:"F-GZHT",type:"737-800",photo:"F-GZHT.JPG"},
+{immat:"F-GZHU",type:"737-800",photo:"F-GZHU.JPG"},
 {immat:"F-GZHX",type:"737-800",photo:"F-GZHX.JPG"},
 {immat:"F-HUYA",type:"737-800",photo:"F-HUYA.JPG"},
 {immat:"F-HUYL",type:"737-800",photo:"F-HUYL.jpeg"},
 {immat:"F-HUYQ",type:"737-800",photo:"F-HUYQ.JPG"},
 {immat:"F-HUYT",type:"737-800SS",photo:"F-HUYT.JPG"},
+{immat:"F-HUYZ",type:"737-800",photo:"F-HUYZ.JPG"},
 {immat:"F-HTVB",type:"737-800",photo:"F-GZHR.JPG"},
 {immat:"F-HTVC",type:"737-800",photo:"F-HTVC.JPG"},
 {immat:"F-HTVG",type:"737-800",photo:"F-HTVG.JPG"},
 {immat:"F-HTVI",type:"737-800",photo:"F-HTVI.jpeg"},
 {immat:"F-HTVL",type:"737-800",photo:"F-HTVL.JPG"},
+{immat:"F-HTVR",type:"737-800",photo:"F-HTVR.JPG"},
 {immat:"F-HTVS",type:"737-800",photo:"F-HTVS.JPG"},
 {immat:"F-HTVT",type:"737-800",photo:"F-HTVT.JPG"},
 {immat:"F-HTVN",type:"737-800",photo:"F-HTVN.JPG"},
@@ -517,7 +522,8 @@ const airlines = {
     
 "ITA Airways":[
 {immat:"EI-HJD",type:"A320neo",photo:"EI-HJD.JPG"},
-{immat:"EI-TEA",type:"A220-300",photo:"EI-TEA.JPG"}
+{immat:"EI-TEA",type:"A220-300",photo:"EI-TEA.JPG"},
+{immat:"EI-IMN",type:"A319-100",photo:"EI-IMN.JPG"}
 ],
 
 "ASL Airlines":[
@@ -536,6 +542,10 @@ const airlines = {
   
 "Condor":[
 {immat:"D-ABON",type:"757-300W",photo:"D-ABON.jpg"}
+],
+  
+"Croatia Airlines":[
+{immat:"9A-CAL",type:"A220-300",photo:"9A-CAL.JPG"}
 ],
 
 "Ryanair":[
@@ -585,8 +595,9 @@ const airlines = {
 "Wizz Air":[
 {immat:"HA-LGZ",type:"A321neo",photo:"HA-LGZ.JPG"},
 {immat:"9H-WAD",type:"A321neo",photo:"9H-WAD.JPG"},
-{immat:"9H-WMD",type:"A321neo",photo:"9H-WMD.JPG"}
-
+{immat:"9H-WMD",type:"A321neo",photo:"9H-WMD.JPG"},
+{immat:"9H-MAD",type:"A321neo",photo:"9H-MAD.JPG"},
+{immat:"9H-WBF",type:"A321neo",photo:"9H-WBF.JPG"}
 ],
 
 "Tui Fly":[
